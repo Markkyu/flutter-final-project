@@ -1,0 +1,31 @@
+name: final_proj_frontend
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.5.3
+  http: ^1.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/EmmanuelOna_pfp.png
+    - assets/images/MarcJoelBaldoz_pfp.png
+  fonts:
+    - family: MyGroceryFont
+      fonts:
+        - asset: fonts/Caveat-Regular.ttf
+    - family: GochiHand
+      fonts:
+        - asset: fonts/GochiHand-Regular.ttf
