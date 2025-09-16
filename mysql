@@ -1,0 +1,44 @@
+-- Table structure for table `category`
+--
+
+CREATE TABLE `category` (
+  `category_id` int(11) NOT NULL,
+  `category_name` text NOT NULL,
+  `category_icon` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `category`
+--
+
+INSERT INTO `category` (`category_id`, `category_name`, `category_icon`) VALUES
+(1, 'Bread', 'bakery_dining'),
+(2, 'Canned Goods', 'kitchen'),
+(3, 'Cigarettes', 'smoking_rooms'),
+(4, 'Chips', 'fastfood'),
+(5, 'Coffee', 'local_cafe'),
+(6, 'Condiments', 'local_dining'),
+(7, 'Laundry', 'local_laundry_service'),
+(8, 'Liquor', 'local_bar'),
+(9, 'Sanitary', 'clean_hands'),
+(10, 'Seasonings', 'spa');
+
+
+-- Table structure for table `product_info`
+--
+
+CREATE TABLE `product_info` (
+  `product_id` int(11) NOT NULL,
+  `product_name` text NOT NULL,
+  `product_price` int(11) NOT NULL,
+  `product_category` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `product_info`
+--
+
+INSERT INTO `product_info` (`product_id`, `product_name`, `product_price`, `product_category`) VALUES
+(1, 'Sky Flakes', 7, 1),
+(2, 'Doowee Donut', 11, 1),
+(4, 'Mega Sardines (Green)', 28, 2);
